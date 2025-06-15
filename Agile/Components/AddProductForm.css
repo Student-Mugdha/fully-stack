@@ -1,0 +1,76 @@
+/* AddProductForm.css */
+
+.form-container {
+    width: 100%;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1D232A; /* Dark background */
+    color: #f1f1f1; /* Light text */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .product-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #d1d1d1;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 12px;
+    background-color: #2C2F36;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #4e9dff;
+  }
+  
+  .form-input::placeholder {
+    color: #c0c0c0;
+  }
+  
+  .form-button {
+    padding: 12px;
+    background-color: #a73928;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-button:hover {
+    background-color: #218838;
+  }
+  
+  .form-button:active {
+    background-color: #1d7431;
+  }
+  

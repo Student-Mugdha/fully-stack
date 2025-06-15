@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User Details</title>
+</head>
+<body>
+    <h1>Edit Your Details</h1>
+    <form action="/user/edit?_method=PATCH" method="POST">
+        <input type="text" name="newUserID" value="<%= userID %>">
+        
+        <label for="userName">Name:</label>
+        <input type="text" name="newUserName" value="<%= userName %>" required>
+    
+        <label for="userEmail">Email:</label>
+        <input type="email" name="newUserEmail" value="<%= userEmail %>" required>
+    
+        <label for="userAddress">Address:</label>
+        <input type="text" name="newUserAddress" value="<%= userAddress %>" required>
+    
+        <label for="userPhoneNumber">Phone Number:</label>
+        <input type="text" name="newUserPhoneNumber" value="<%= userPhoneNumber %>" required>
+    
+        <label for="formPassword">Confirm Password:</label>
+        <input type="password" name="formPassword" required>
+    
+        <button type="submit">Save Changes</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Vendor Details</title>
+</head>
+<body>
+    <h1>Edit Your Details</h1>
+    <form action="/vendor/edit?_method=PATCH" method="POST">
+        <input type="number" name="newVendorID" value="<%= vendorID %>">
+        
+        <label for="vendorName">Name:</label>
+        <input type="text" name="newVendorName" value="<%= vendorName %>" required>
+    
+        <label for="vendorEmail">Email:</label>
+        <input type="email" name="newVendorEmail" value="<%= vendorEmail %>" required>
+    
+        <label for="vendorAddress">Address:</label>
+        <input type="text" name="newVendorAddress" value="<%= vendorAddress %>" required>
+    
+        <label for="vendorPhoneNumber">Phone Number:</label>
+        <input type="text" name="newVendorPhoneNumber" value="<%= vendorPhoneNumber %>" required>
+    
+        <label for="formPassword">Confirm Password:</label>
+        <input type="password" name="formPassword" required>
+    
+        <button type="submit">Save Changes</button>
+    </form>
+    
+</body>
+</html>

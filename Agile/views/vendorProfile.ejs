@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Profile</title>
+</head>
+<body>
+    <h2>Welcome, <%= vendorName %></h2>    
+    <div class="user-details">
+        <p><strong>vendor ID:</strong> <%= vendorID %></p>
+        <p><strong>Email:</strong> <%= vendorEmail %></p>
+        <p><strong>Address:</strong> <%= vendorAddress %></p>
+        <p><strong>Phone Number:</strong> <%= vendorPhoneNumber %></p>
+        <p><strong>Password:</strong> <%= vendorPassword %></p>
+    </div>
+    <a href="/vendor/edit">
+        <button>Edit Profile</button>
+    </a>
+</body>
+</html>

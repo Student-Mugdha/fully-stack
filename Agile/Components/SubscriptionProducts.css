@@ -1,0 +1,127 @@
+.subscription-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #1d232a;
+  color: #fff;
+}
+
+.subscription-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.subscription-plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.subscription-plan {
+  background: #2c2f36;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.subscription-plan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.subscription-plan.selected {
+  border: 2px solid #28a745;
+  transform: translateY(-5px);
+}
+
+.subscription-plan h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.price {
+  margin: 1.5rem 0;
+}
+
+.amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.duration {
+  font-size: 1.2rem;
+  color: #adb5bd;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.features li {
+  margin: 1rem 0;
+  color: #adb5bd;
+  font-size: 1.1rem;
+}
+
+.features li::before {
+  content: "✓";
+  color: #28a745;
+  margin-right: 0.5rem;
+}
+
+.subscribe-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+}
+
+.subscribe-btn:hover {
+  background: #218838;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1d232a;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .subscription-container {
+    padding: 1rem;
+  }
+
+  .subscription-plans {
+    grid-template-columns: 1fr;
+  }
+
+  .subscription-plan {
+    padding: 1.5rem;
+  }
+
+  .amount {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,34 @@
+/* ProductList.css */
+
+.product-list {
+    padding: 20px;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card {
+    background-color: #343f4a; /* Light gray background */
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Inner spacing */
+    margin: 10px; /* Space between cards */
+    flex: 1 1 calc(30% - 20px); /* Adjust width for three cards in a row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.2s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.product-card h3 {
+    margin: 0 0 10px; /* Space below the heading */
+}
+
+.product-card p {
+    margin: 5px 0; /* Space above and below paragraphs */
+}
