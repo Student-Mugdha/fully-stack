@@ -1,0 +1,36 @@
+.navbar-custom {
+  background-color: transparent; /* Make the navbar fully transparent */
+}
+
+.navbar-custom:hover {
+  background-color: transparent; /* Keep the background transparent on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.navbar-start a {
+  color: #ffffff; /* Set Fruit Box text to white */
+}
+
+.menu li a {
+  color: #ffffff; /* Text color */
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #fbbf24; /* Change text color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.navbar-start a {
+  color: #ffffff; /* Set Fruit Box text to white */
+}
+
+.menu li a {
+  color: #ffffff; /* Text color */
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #fbbf24; /* Change text color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}

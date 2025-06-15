@@ -1,0 +1,314 @@
+/* Invoice Container */
+.invoice-container {
+  padding: 40px; /* Increased padding for better spacing */
+  background-image: url("https://img.freepik.com/free-photo/sliced-fruits-berries-yellow-background_23-2148144274.jpg"); /* Background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  color: #333333; /* Dark text for readability */
+  min-height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Arial", sans-serif; /* Modern font */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Invoice Details */
+.invoice-details {
+  background-color: rgba(
+    249,
+    249,
+    249,
+    0.9
+  ); /* Light gray background with transparency */
+  padding: 30px; /* More padding for the details section */
+  border-radius: 10px;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+  width: 100%;
+  max-width: 600px;
+  animation: fadeIn 0.5s ease-out, slideUp 0.5s ease-in; /* Combined animations for fade-in and slide-up */
+  margin-top: 20px; /* Spacing from the top of the container */
+}
+
+/* Fade In and Slide Up Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px); /* Start from below */
+  }
+  to {
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Invoice Details Text */
+.invoice-details p {
+  font-size: 1.3rem; /* Increased font size for emphasis */
+  margin: 15px 0; /* Increased margin for spacing */
+  line-height: 1.5; /* Improved readability */
+  font-weight: 600; /* Bold font weight for stronger emphasis */
+}
+
+/* Invoice Items */
+.invoice-items {
+  margin-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+}
+
+/* Individual Invoice Item */
+.invoice-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  transition: transform 0.3s; /* Smooth hover effect */
+  font-weight: 500; /* Slightly bold for invoice items */
+}
+
+.invoice-item:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Summary Section */
+.invoice-summary {
+  margin-top: 20px;
+}
+
+.invoice-summary h3 {
+  color: #28a745; /* Highlight color */
+  font-weight: 700; /* Bold font weight for summary */
+}
+
+/* Button Styles */
+.back-button,
+.submit-button {
+  margin-top: 20px;
+  background-color: #ff69b4; /* Hot pink for a girly touch */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effects for Buttons */
+.back-button:hover,
+.submit-button:hover {
+  background-color: #ff1493; /* Deeper pink on hover */
+  transform: translateY(-3px); /* Lift effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Vendor Selection Dropdown */
+.vendor-selection {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Dropdown Label */
+label {
+  margin-bottom: 10px;
+  font-weight: bold; /* Make label bold */
+  color: #333; /* Dark color for contrast */
+}
+
+/* Styled Select Element */
+select {
+  padding: 12px 20px; /* More padding for comfort */
+  border-radius: 8px; /* Rounded corners */
+  border: 2px solid #ff69b4; /* Pink border for a girly touch */
+  background-color: #fff; /* White background for clarity */
+  color: #333; /* Dark text for readability */
+  font-size: 1rem; /* Consistent font size */
+  font-family: "Arial", sans-serif; /* Modern font */
+  appearance: none; /* Remove default styling */
+  outline: none; /* Remove outline on focus */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: border 0.3s, box-shadow 0.3s; /* Smooth transition */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Custom Arrow for Dropdown */
+select::-ms-expand {
+  display: none; /* Remove default arrow in IE */
+}
+
+.select-container {
+  position: relative; /* Position for arrow */
+}
+
+.select-container::after {
+  content: "▼"; /* Dropdown arrow */
+  position: absolute;
+  right: 10px; /* Adjust for alignment */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Centering */
+  font-size: 0.8rem; /* Arrow size */
+  color: #ff69b4; /* Match the border color */
+  pointer-events: none; /* Prevent pointer events on arrow */
+}
+
+/* Hover Effects for Dropdown */
+select:hover {
+  border-color: #ff1493; /* Darker pink on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Focus Effects for Dropdown */
+select:focus {
+  border-color: #ff1493; /* Darker pink when focused */
+  box-shadow: 0 0 5px rgba(255, 20, 147, 0.5); /* Glow effect */
+}
+
+/* Responsive Design for Select Element */
+@media (max-width: 600px) {
+  select {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold; /* Make label bold */
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Light border */
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .invoice-details {
+    width: 90%; /* Responsive width */
+  }
+
+  .back-button,
+  .submit-button {
+    width: 100%; /* Full width buttons */
+    padding: 10px; /* Smaller padding */
+    font-size: 0.9rem; /* Smaller text */
+  }
+}
+
+/* Payment Button Styles */
+.submit-button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+  margin: 1rem auto;
+  display: block;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Payment Processing State */
+.payment-processing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.payment-processing::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Vendor Selection Styles */
+.vendor-selection {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.vendor-selection label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.select-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.select-container select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #2c3e50;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.select-container select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vendor-selection {
+    padding: 1rem;
+  }
+
+  .submit-button {
+    max-width: 100%;
+  }
+}

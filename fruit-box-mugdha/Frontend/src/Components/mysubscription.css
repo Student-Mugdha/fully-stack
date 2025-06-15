@@ -1,0 +1,77 @@
+.subscription-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #1d232a; /* Background color */
+  font-family: Arial, sans-serif;
+}
+
+.subscription-details {
+  /* New class for the box */
+  background: #444; /* Box background color */
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  width: 500px; /* Increased width */
+  margin: 10px auto; /* Center the box horizontally */
+  padding: 20px; /* Padding inside the box */
+  color: white; /* Text color */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+.subscription-details:hover {
+  /* Optional: Add hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.subscription-container h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: white; /* Header color */
+}
+
+.subscription-container h2 {
+  font-size: 28px;
+  margin: 15px 0;
+  color: #b24a22; /* A distinct color for the plan name */
+}
+
+p {
+  color: #ccc; /* Keeping this color for general text */
+  font-size: 18px;
+}
+
+.features {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.features li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #bbb; /* Lighter gray for feature items */
+}
+
+.no-subscription {
+  color: #777; /* Different color for no subscription message */
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px; /* Responsive font size */
+  }
+
+  h2 {
+    font-size: 24px; /* Responsive font size */
+  }
+
+  p {
+    font-size: 16px; /* Responsive font size */
+  }
+
+  .subscription-details {
+    width: 90%; /* Responsive width for smaller screens */
+  }
+}

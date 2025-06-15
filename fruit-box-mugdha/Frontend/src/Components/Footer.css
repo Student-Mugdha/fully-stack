@@ -1,0 +1,12 @@
+.footer {
+  background-color: rgba(4, 28, 25, 0.7); /* Semi-transparent background */
+  color: white; /* White text for better contrast */
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.8); /* Lighter links for visibility */
+}
+
+.footer a:hover {
+  color: rgba(255, 255, 255, 1); /* Full white on hover */
+}
